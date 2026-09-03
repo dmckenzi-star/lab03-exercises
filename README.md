@@ -103,12 +103,12 @@ Between those two status checks, I staged and committed README.md, so Git began 
 
 In one or two sentences each, what does each command do?
 
-- `git init`
-- `git status`
-- `git add`
-- `git commit`
-- `git log`
-- `git diff`
+- `git init` — it made the .git folder so git can track the files
+- `git status` — it tells you which files changed and if they’re staged yet
+- `git add` — it stages the file so it’s ready to be committed
+- `git commit` — it saves the staged changes as a permanent snapshot with a message
+- `git log` — it shows the commit history with ids and messages
+- `git diff` — it shows the actual lines that changed not just the file name
 
 ### 1.7 Repository link
 
