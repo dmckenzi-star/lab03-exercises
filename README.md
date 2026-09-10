@@ -46,8 +46,6 @@ git log --oneline
 
 ### 1.5 git diff
 
-Paste the `git status` and `git diff` commands and their output.
-
 ```text
 git status
 On branch main
@@ -119,8 +117,16 @@ https://github.com/dmckenzi-star/lab03-exercises
 In your own words:
 
 - How does the nested-loop approach check for a duplicate?
+
+The outer loop selects a value, and the inner loop compares it with each value after it in that same list. If two values at different positions are equal, the program has found a duplicate. If it checks every pair without finding a match, there are no duplicates.
+
 - How does the set-based approach check for a duplicate?
+
+The set-based approach keeps a set of values it has already seen. It goes through the list one value at a time, **checking whether the value is in the set before adding it**. If it is already there, the program has found a duplicate. Otherwise, it adds the value and continues. Reaching the end without finding a repeat means there are no duplicates.
+
 - What is the runtime and memory trade-off of each?
+
+For a list of n values, this takes **O(n) time on average**, because it makes one pass and set operations take constant time on average, but it needs **O(n) extra memory** in the worst case to store values. Nested loops take **O(n²) time in the worst case** but only **O(1) extra memory**, so the set approach trades additional memory for faster duplicate detection.
 
 ### 1.9 Pull request merge options
 
