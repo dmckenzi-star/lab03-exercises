@@ -14,3 +14,11 @@ def check(values: list) -> bool:
 
 print(check([1, 2, 3, 2]))
 print(check([5, 2, -10, 44, 90]))
+
+additional_values = [10, 20, 30, 10]
+expected = True
+actual = check(additional_values)
+print(
+    f"Additional test: input={additional_values}, expected={expected}, actual={actual}, "
+    f"{'PASS' if actual == expected else 'FAIL'}"
+)
