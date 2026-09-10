@@ -122,7 +122,7 @@ The outer loop selects a value, and the inner loop compares it with each value a
 
 - How does the set-based approach check for a duplicate?
 
-The set-based approach keeps a set of values it has already seen. It goes through the list one value at a time, **checking whether the value is in the set before adding it**. If it is already there, the program has found a duplicate. Otherwise, it adds the value and continues. Reaching the end without finding a repeat means there are no duplicates.
+The function uses `seen` to remember values it has already encountered. For each value in the list, it checks whether that value is in `seen` **before adding it**. If it is already there, the value appeared earlier, so it is a duplicate. Otherwise, the function adds it to `seen` and continues. Reaching the end without a match means there are no duplicates.
 
 - What is the runtime and memory trade-off of each?
 
