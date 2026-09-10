@@ -101,12 +101,12 @@ Between those two status checks, I staged and committed README.md, so Git began 
 
 In one or two sentences each, what does each command do?
 
-- `git init` — it made the. git folder so git can track the files.
-- `git status` tells you which files changed and if they are staged yet.
-- `git add` — it stages the file, so it is ready to be committed.
-- `git commit` — it saves the staged changes as a permanent snapshot with a message.
-- `git log` — it shows the commit history with ids and messages.
-- `git diff` — it shows the actual lines that changed not just the file name.
+- `git init` - This creates a local Git repository and sets up a .git folder for storing Git's history and tracking information. The repository is set up, but I must add my project files before Git starts tracking them.
+- `git status` - shows which files have been changed, whether the changes are staged, and which files Git is not tracking.
+- `git add` - stages the changes in the files you select so they are ready for the next commit; it does not, however, commit them.
+- `git commit` - means to save a snapshot of the changes that have been staged in the history of the local repository, together with a comment clarifying the changes.
+- `git log` - shows the commit history, including commit IDs, messages, authors, and dates, so that I can examine earlier commits.
+- `git diff` – this displays the actual lines added or removed from tracked files that I have not staged yet, rather than just the file names. If I want to see the changes that have already been staged, then I should use git diff --staged.
 
 ### 1.7 Repository link
 
