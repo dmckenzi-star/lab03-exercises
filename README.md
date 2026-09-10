@@ -133,5 +133,13 @@ For a list of n values, this takes **O(n) time on average**, because it makes on
 In your own words, what does each GitHub merge option do?
 
 - Create a merge commit
+
+This merges one branch into another while keeping all the original commits. It also creates an extra commit that shows where the branches were joined together
+
 - Squash and merge
+
+This combines the pull request’s commits into one new commit on the branch you are merging into. The changes are kept, but the smaller commits no longer appear separately in that branch’s history
+
 - Rebase and merge
+
+This adds the branch’s commits one at a time after the latest commit on the branch you are merging into. They stay separate but get new commit IDs. There is no extra merge commit, so the history looks like one straight line
